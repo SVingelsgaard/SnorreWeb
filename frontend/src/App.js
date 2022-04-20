@@ -98,7 +98,7 @@ export default function App() {
       
       <video onClick={handleClicks} style={videoStyles} autoPlay={"autoplay"} preLoad="auto" playInline loop muted={muted}>
         Does not support video
-        <source src='./BattleBuS.mp4' type="video/mp4"/>
+        <source src='./BattleBuS_1.mp4' type="video/mp4"/>
       </video>
     </div>
   );
