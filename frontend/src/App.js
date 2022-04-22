@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import './Styling/App.css';
 import { useState, useEffect } from 'react';
-import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BattleBus from './Assets/Videos/BattleBuS_1.mp4';
+
 
 const textStyles = {
   fontFamily: 'new order',
@@ -89,7 +88,7 @@ export default function App() {
     <div> 
       
   
-      <h1  onClick={handleClicks} style={textStyles}>{text}</h1>
+      <h1 onClick={handleClicks} style={textStyles}>{text}</h1>
       <div onClick={handleClicks} style={{textAlign: 'center', cursor: 'pointer'}}>
         <button style={buttonStyles} onClick={handleClick}>{muteUnMute}</button>
       </div>
@@ -98,10 +97,8 @@ export default function App() {
       
       <video onClick={handleClicks} style={videoStyles} autoPlay={"autoplay"} preLoad="auto" playInline loop muted={muted}>
         Does not support video
-        <source src='./BattleBuS_1.mp4' type="video/mp4"/>
+        <source src={BattleBus} type="video/mp4"/>
       </video>
     </div>
   );
 }
-
-
